@@ -12,26 +12,8 @@ import {
     View
 } from 'react-native';
 import Camera from './Component/Camera/Camera';
+import TabBarController from './Component/Meituan/tabBarController'
+import TestLinkIOS from './Component/LinkIOS/TestLinkIOS'
 
-export default class TestComponent extends Component {
-  render() {
-    return (
-        <View >
-          <Camera/>
-        </View>
 
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-
-});
-
-AppRegistry.registerComponent('TestComponent', () => TestComponent);
+AppRegistry.registerComponent('TestComponent', () => TestLinkIOS);
